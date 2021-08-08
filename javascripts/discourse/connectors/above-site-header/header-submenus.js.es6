@@ -63,13 +63,21 @@ export default {
           link => link.parent === parentFor
         );
 
+        let parentLink = fragments[4];
+        let parentUrl, target;
+        if (parentLink) {
+          parentUrl = fragments[5];
+          target = fragments[6];
+        }
         const menuItem = {
           text,
           className,
           icon,
           title,
           view,
-          childItems
+          childItems,
+          parentLink,
+          target
         };
         menuItemsArray.push(menuItem);
       });

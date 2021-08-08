@@ -12,6 +12,7 @@ $icon-opacity: 0.7;
 .top-menu {
   background: fallback($Menu_background, $primary);
   width: 100%;
+  font-family: "Lato",sans-serif;
 
   .menu-content {
     display: flex;
@@ -106,6 +107,14 @@ $icon-opacity: 0.7;
     &:hover {
       color: fallback($Submenu_item_hover_color, $primary);
       background-color: fallback($Submenu_item_hover_background, $tertiary-low);
+    }
+  }
+
+  .menu-link {
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
     }
   }
 
